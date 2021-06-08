@@ -60,9 +60,8 @@
                     <br><br>
                 </form>
             </div>  
-            <% session.setAttribute("abc","harsh verma"); %>
+            <% session.setAttribute("abc","Dharmraj Solanki "); %>
         <footer>
-            <p align="center">Contact us - 9893171773</p>
         </footer>
     </body> 
 </html>
