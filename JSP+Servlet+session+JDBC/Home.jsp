@@ -60,7 +60,7 @@
                 <h1>Welcome <%= session.getAttribute("sessname") %> in Dashboard Page</h1>
                 <%
                 Class.forName("com.mysql.jdbc.Driver");
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/harsh","root","");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dharmraj","root","");
                 Statement st = conn.createStatement();
                 ResultSet x = st.executeQuery("select * from web");
                 out.print("<table border='1' style='background-color:cyan;width:500px;'>");
