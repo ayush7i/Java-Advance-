@@ -26,7 +26,7 @@ public class RegSer extends HttpServlet {
         PrintWriter out = response.getWriter();
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            java.sql.Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/harsh","root","");
+            java.sql.Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dharmraj","root","");
             Statement st = (Statement) conn.createStatement();
             int x = st.executeUpdate("insert into web (Name, Mobile_No, ID, Password ) values ('"+request.getParameter("txtname")+"','"+request.getParameter("txtmn")+"','"+request.getParameter("txtid")+"','"+request.getParameter("pass")+"')");
             if(x!=0)
