@@ -35,7 +35,7 @@ public class LoginSer extends HttpServlet {
         try
         {
           Class.forName("com.mysql.jdbc.Driver");
-          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/harsh","root","");
+          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dharmraj","root","");
           Statement st = conn.createStatement();
           ResultSet x = st.executeQuery("select * from web where ID='"+request.getParameter("txtid")+"' and password='"+request.getParameter("pass")+"'");
           if(x.next())
